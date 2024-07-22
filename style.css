@@ -46,6 +46,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 64px;
+  height: 100vh;
   background-color: hsl(0, 0%, 98%);
   padding: 80px 165px;
 }
@@ -158,6 +159,7 @@ body {
 @media screen and (max-width: 768px) {
   body {
     padding: 78px 32px;
+    height: auto;
   }
   .text-content .thin, .text-content .bold {
     font-size: 24px;
