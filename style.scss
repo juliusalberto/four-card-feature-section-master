@@ -53,6 +53,7 @@ $fonts: (
     letter-spacing: 0.09px;
     padding: 32px;
     color: map-get($map: $colors, $key: very-dark-blue);
+    height: 250px;
     
     @include flexbox(column);
 
@@ -118,9 +119,11 @@ body {
 .grid-container {
     flex: 1;
     display: grid;
-    grid-template-rows: repeat(4, minmax(auto, calc(250px / 2)));
+    grid-template-rows: repeat(4, minmax(auto, calc(220px / 2)));
     grid-template-columns: repeat(3, minmax(auto, 350px));
     gap: 30px;
+    align-items: center;
+    justify-content: center;
 
     .grid-item-one {
         @include top-border(map-get($colors, cyan));
@@ -166,6 +169,10 @@ body {
         p {
             font-size: 15px;
         }
+    }
+
+    %grid-item {
+        height: 222px;
     }
 
     .grid-container {

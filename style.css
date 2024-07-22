@@ -11,6 +11,7 @@
   letter-spacing: 0.09px;
   padding: 32px;
   color: hsl(234, 12%, 34%);
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -87,9 +88,11 @@ body {
 .grid-container {
   flex: 1;
   display: grid;
-  grid-template-rows: repeat(4, minmax(auto, 125px));
+  grid-template-rows: repeat(4, minmax(auto, 110px));
   grid-template-columns: repeat(3, minmax(auto, 350px));
   gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 .grid-container .grid-item-one {
   position: relative;
@@ -166,6 +169,9 @@ body {
   }
   .text-content p {
     font-size: 15px;
+  }
+  .grid-container .grid-item-one, .grid-container .grid-item-two, .grid-container .grid-item-three, .grid-container .grid-item-four {
+    height: 222px;
   }
   .grid-container {
     grid-template-columns: 1fr;
